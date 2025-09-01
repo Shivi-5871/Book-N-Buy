@@ -34,6 +34,7 @@ Icons: Font Awesome
 1️⃣ Clone the repository
 
 git clone https://github.com/Shivi-5871/Book-N-Buy.git
+
 cd book-n-buy
 
 
