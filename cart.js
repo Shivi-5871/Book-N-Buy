@@ -30,7 +30,7 @@ function ready() {
 
 // tysm for purchase alert on purchasing 
 function purchaseClicked() {
-    alert('Thank you for your purchase')
+    alert('Please log in first')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
