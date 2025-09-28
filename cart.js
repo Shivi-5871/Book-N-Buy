@@ -104,3 +104,45 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+
+// search form activation
+var searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+}      
+
+// login button activation
+let loginForm = document.querySelector('.login-form-container');
+
+document.querySelector('#login-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+}
+
+document.querySelector('#close-login-btn').onclick = () =>{
+    loginForm.classList.remove('active');
+}
+
+window.onscroll = () =>{
+    searchForm.classList.remove('active');
+    
+    if(window.scrollY > 80){
+        document.querySelector('.header .headertag').classList.add('active');
+    }else{
+        document.querySelector('.header .headertag').classList.remove('active');
+    }
+}
+
+window.onload = () =>{
+    if(window.scrollY > 80){
+        document.querySelector('.header .headertag').classList.add('active');
+    }else{
+        document.querySelector('.header .headertag').classList.remove('active');
+    }
+}
+
+// Dark mode function
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
